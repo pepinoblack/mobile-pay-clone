@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import ArchivoFinal from "./ArchivoFinal";
+import ArchivoFinal from "./archivofinal";
+
 
 export default function ArchivoFinalPage() {
   return (

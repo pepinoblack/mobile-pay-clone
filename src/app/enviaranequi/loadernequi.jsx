@@ -1,4 +1,3 @@
-// LoaderNequi.jsx
 "use client";
 import "./loadernequi.css";
 

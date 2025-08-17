@@ -53,3 +53,4 @@ __mocks__/
 *.test.js
 *.test.ts
 *.test.tsx
+*.psd

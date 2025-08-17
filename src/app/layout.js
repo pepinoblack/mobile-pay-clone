@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Nequi App",
-  description: "Clon de Nequi para instalar como PWA",
+  title: "APP",
+  description: "instalar como PWA",
 };
 
 export default function RootLayout({ children }) {
