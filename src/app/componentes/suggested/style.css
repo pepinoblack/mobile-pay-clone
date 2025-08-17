@@ -1,0 +1,23 @@
+.suggested {
+  padding: 16px;
+}
+
+.suggest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.suggest-item {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fav-text{
+  font-size: 11px;
+  margin-top: 5px;
+  color: #1c021f;
+  font-weight: 500;
+}

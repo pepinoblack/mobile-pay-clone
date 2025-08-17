@@ -1,0 +1,85 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 999;
+}
+
+.popup {
+  background: white;
+  width: 100%;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  padding: 1.5rem;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-bar {
+  width: 40px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 999px;
+  margin: 0 auto 1rem;
+}
+
+.popup-titulo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.popup-sub {
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  color: #555;
+}
+
+.popup-dato {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.popup-dato.rosa {
+  color: #1c021f;
+}
+
+.btn-confirmar {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  background: #c82a7f;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-corrige {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}

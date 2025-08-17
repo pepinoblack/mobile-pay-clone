@@ -1,0 +1,155 @@
+:root {
+  --tq-bg: #ffffff;
+  --tq-overlay: rgba(0, 0, 0, 0.38);
+  --tq-handle: #d9d3dd;
+  --tq-text: #220b22;             /* título */
+  --tq-ink: #2a0f2f;              /* íconos/chevron */
+  --tq-sub: #72657a;              /* subtítulo */
+  --tq-card-border: #eee8f0;      /* borde tarjetas */
+  --tq-card-shadow: 0 1px 0 rgba(0,0,0,.04);
+  --tq-pill: #291224;             /* badge "Nuevo" */
+}
+
+/* Overlay */
+.popupenvio-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--tq-overlay);
+  backdrop-filter: blur(1px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1100;
+}
+
+/* Sheet inferior */
+.popupenvio-sheet {
+  width: 100%;
+  max-height: 82vh;
+  background: var(--tq-bg);
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.16);
+  padding: 8px 16px 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Slide-up suave */
+@keyframes popupenvio-enter {
+  from { transform: translateY(24px); opacity: .96; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+.popupenvio-anim { animation: popupenvio-enter .18s ease-out; }
+
+/* Handle */
+.popupenvio-handle {
+  width: 64px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--tq-handle);
+  margin: 8px auto 12px;
+}
+
+/* Header */
+.popupenvio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+  margin-bottom: 6px;
+}
+
+.popupenvio-title {
+  margin: 2px 0 10px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 800;
+  color: var(--tq-text);
+  letter-spacing: 0.1px;
+}
+
+.popupenvio-x {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 12px;
+  background: #f4edf5;
+  color: var(--tq-ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lista de opciones */
+.popupenvio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Tarjeta */
+.envio-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 28px 1fr 22px; /* icono, texto, chevron */
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--tq-card-border);
+  border-radius: 14px;
+  padding: 14px 14px 14px 16px;
+  box-shadow: var(--tq-card-shadow);
+  text-align: left;
+  width: 100%;
+}
+
+.envio-card:active { background: #faf7fb; }
+
+.envio-ico {
+  color: var(--tq-ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.envio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.envio-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--tq-ink);
+}
+
+.envio-sub {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--tq-sub);
+}
+
+/* "Nuevo" pill */
+.envio-badge {
+  position: absolute;
+  right: 54px;                /* queda justo antes del chevron */
+  top: 10px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  background: var(--tq-pill);
+  border-radius: 999px;
+}
+
+/* Chevron */
+.envio-right {
+  color: var(--tq-ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}

@@ -1,0 +1,141 @@
+.enviaranequi-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.enviaranequi-header {
+  align-items: center;
+  padding: 1rem;
+  color: #180219;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #180219;
+}
+
+.enviaranequi-main {
+  padding: 1rem;
+  flex: 1;
+  padding-bottom: 120px;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.input-cel {
+  display: flex;
+  align-items: center;
+  background: #f8f6fa;
+  border-radius: 0.5rem;
+  height: 56px;
+}
+
+.input-cel input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+  height: 56px;
+}
+
+.campo input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background: #f8f6fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 56px;
+  box-sizing: border-box;
+}
+
+.icono-input {
+  color: #000;
+  position: absolute;
+  top: 130px;
+  left: 384px;
+}
+
+.ayuda-texto {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 0.2rem;
+  margin-left: 0.4rem;
+}
+
+.titulo-cuenta {
+  color: #c82a7f;
+  margin: 1.2rem 0 0.5rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.cuenta-disponible {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0 5px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 5px;
+  height: 56px;
+}
+
+.cuenta-disponible img {
+  width: 40px;
+  height: 40px;
+}
+
+.alerta {
+  display: flex;
+  gap: 0.5rem;
+  background: #47d2eb;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  color: #000;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.2;
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 96%;
+  height: 10vh;
+}
+
+.alerta svg {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.btn-sigue {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #de85bd;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  width: calc(100% - 2rem);
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-sigue.activo {
+  background: #c82a7f;
+}

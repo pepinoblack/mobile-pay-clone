@@ -1,0 +1,149 @@
+/* Fondo translúcido */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+/* Contenedor de filas a la derecha */
+.popup-list {
+  margin-left: auto;
+  /* empuja a la derecha */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Fila: texto a la derecha, icono al extremo derecho */
+.row {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+/* Texto tipo Nequi */
+.row-label {
+  color: #1c021f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: right;
+}
+
+/* Cuadro de icono (magenta/azul) */
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.magenta {
+  background: #d40072;
+}
+
+.blue {
+  background: #5c8df6;
+}
+
+/* Botón de cerrar flotante */
+.close-fab {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(212, 0, 114, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  color: #1c021f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-fab:active {
+  transform: scale(0.98);
+}
+
+
+.bottom-menu {
+  position: fixed;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  padding: 0 12px;
+  z-index: 50;
+  align-items: center;
+}
+
+/* Caja blanca con las 3 opciones */
+.menu-items {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px 8px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Botones internos */
+.menu-item {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  flex: 1;
+  padding: 8px 6px;
+  border-radius: 10px;
+  color: #130056;
+  /* texto/ícono */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+/* Estado activo como en Nequi */
+.menu-item.active {
+  background: #f1eaff;
+  /* lila muy claro */
+  font-weight: 600;
+}
+
+/* Etiquetas */
+.menu-item .label {
+  line-height: 1;
+}
+
+/* Botón rosa del $ */
+.money-btn {
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 14px;
+  background: #d10073;
+  /* magenta Nequi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(209, 0, 115, 0.4);
+}
+

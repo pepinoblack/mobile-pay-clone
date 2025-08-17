@@ -1,0 +1,81 @@
+/* Fondo translúcido */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+/* Hoja inferior */
+.popup-sheet {
+  background: #ffffff;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+  padding: 20px 16px 90px; 
+  position: relative;
+}
+
+/* Contenedor de filas a la derecha */
+.popup-list {
+  margin-left: auto;          /* empuja a la derecha */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Fila: texto a la derecha, icono al extremo derecho */
+.row {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+/* Texto tipo Nequi */
+.row-label {
+  color: #1c021f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: right;
+}
+
+/* Cuadro de icono (magenta/azul) */
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.magenta { background: #d40072; }
+.blue { background: #5c8df6; }
+
+/* Botón de cerrar flotante */
+.close-fab {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(212, 0, 114, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  color: #1c021f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-fab:active { transform: scale(0.98); }
